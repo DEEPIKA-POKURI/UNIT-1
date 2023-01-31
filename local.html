@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="local"></div>
+<script>
+if (typeof(Storage) !== "undefined") {
+  localStorage.setItem("name", "CMRIT");
+  document.getElementById("local").innerHTML = localStorage.getItem("name");
+} else {
+  document.getElementById("local").innerHTML = "Web Storage is not supported by the browser.";
+}
+</script>
+</body>
+</html>
